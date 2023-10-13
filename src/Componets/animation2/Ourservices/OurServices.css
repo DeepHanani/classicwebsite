@@ -1,0 +1,68 @@
+.maintenanceImgdiv{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+}
+
+.maintenanceImgdiv img{
+    width: 100%;
+    height: 100%;
+}
+
+.maintenance{
+    width: 400px;
+    height: 250px;
+    /* background-color: azure; */
+    /* border: 1px solid black; */
+   padding: 20px 10px 3px 10px;
+   box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+   transition: all .8s;
+}
+
+.maintenance:hover {
+    color: white;
+    background-color: orange;
+
+}
+
+
+.maintenance:hover  .maintenanceImgdiv img {
+   
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+
+
+.maintenance p{
+    text-align: center;
+}
+
+.webServicescon{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    /* background-color: antiquewhite; */
+    margin: 50px auto 0px auto;
+}
+
+.viewMoreBtn{
+    margin-top: 50px;
+}
+
+.viewMoreBtn button{
+    padding: 10px 40px 10px 40px;
+    font-size: 15px;
+    /* margin-right: 250px; */
+    background-color: rgb(31, 77, 202);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    transition: all .8s;
+}
+
+.viewMoreBtn button:hover{
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+}

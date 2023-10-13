@@ -1,0 +1,116 @@
+.stepsContainer{
+    width: 1000px;
+    /* background-color: azure;   */
+    margin: auto;
+}
+
+.prostepsContainer{
+    background-color: rgb(24, 24, 71);
+    height: 590px;
+    padding: 40px 0px 0px 0px;
+    margin-top: 110px;
+  
+}
+
+.prostepsContainer h1{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+  
+}
+
+.stepsContainer .stepss{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+
+.stepss .circle{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(41, 41, 255);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.stepss .circle:hover{
+    background-color: orange;
+}
+
+
+
+.stepss .progress{
+ position: absolute;
+ height: 1px;
+ width: 100%;
+ background-color: rgb(255, 255, 255);
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.information div{
+    /* background-color: aqua; */
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+.socialContainer{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50px;
+    margin-bottom: 80px;
+}
+
+.socialContainer .socialmedia{
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia div{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 1300px;
+    height: 1px;
+    background-color: white;
+    margin: auto;
+}
+
+.details{
+    color: white;
+}
+
+.follow{
+    padding-top: 30px;
+}
+
+
+/* html {
+    scroll-behavior: smooth;
+  } */

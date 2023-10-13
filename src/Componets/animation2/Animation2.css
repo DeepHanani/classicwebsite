@@ -1,0 +1,156 @@
+section{
+    
+    height: 80vh;
+   
+}
+
+.main{
+   height: 800px;
+    width: 100%;
+ background-color: black;
+ padding-bottom: 26px;
+ background-image: url("https://wallpaperaccess.com/full/1689344.jpg");
+   
+}
+
+section h1{
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    color: #ddd;
+    font-size: 5em;
+    letter-spacing: 0.8em;
+}
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 5s linear forwards;
+}
+
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 830px;
+}
+
+.threeDiv div{
+    width: 310px;
+    height: 200px;    
+}
+
+.threeDiv{
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    z-index: 2;  
+}
+
+.firstOfDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+    background-color: white;
+    transition: all .3s;
+}
+
+.firstOfDiv:hover{
+    background-color: rgb(252, 166, 6);
+    color: white;
+   
+   
+}
+.firstOfDiv:hover div svg{
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.firstOfDiv div{
+    /* background-color: rgb(241, 166, 4); */
+    width: 80px;
+    height: 80px;
+}
+
+.firstOfDiv div svg{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    fill: rgb(40, 43, 78);
+}
+
+.secondOfDiv div{
+    width: 80px;
+    height: 80px;
+}
+
+.secondOfDiv div svg{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    fill: white;
+}
+
+.secondOfDiv div h3{
+    color: white;
+}
+
+.secondOfDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(250, 174, 10);
+}
+
+.thirdOfDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    transition: all .8s;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.2);
+    text-align: center;
+}
+
+.thirdOfDiv div svg{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    fill: rgb(59, 56, 85);
+}
+
+.thirdOfDiv:hover div svg{
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.thirdOfDiv div{
+    width: 80px;
+    height: 80px;
+}
+
+.thirdOfDiv:hover{
+    background-color: rgb(252, 166, 6);
+    color: white;
+   
+}
+
+@keyframes animate{
+
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+    }
+  
+    
+}
