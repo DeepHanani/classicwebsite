@@ -12,7 +12,7 @@ export default function ForgetPassword() {
 
   const naviget = useNavigate()
  let b =JSON.parse(localStorage.getItem('user-info'));
- console.log(b)
+ console.log(b);
 
  const handalChange = (e)=>{
   setInput({...input,[e.target.name] : e.target.value})

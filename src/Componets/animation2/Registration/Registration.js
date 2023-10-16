@@ -13,9 +13,9 @@ export default function Registration(){
         password:""
     });
 
-    const[firstError,setFirsterror] = useState("")
-    const[emailError,setemailerror] = useState("")
-    const[passwordError,setpassworderror] = useState("")
+    const[firstError,setFirsterror] = useState("");
+    const[emailError,setemailerror] = useState("");
+    const[passwordError,setpassworderror] = useState("");
 
     const navigate = useNavigate();
 
@@ -31,19 +31,19 @@ export default function Registration(){
 //   }
 
  if(input.password.length >8 ){
+
   setpassworderror("password must be 8 character");
+
 }
     }
-
 
     console.log(input);
 
     const handalSubmit = ()=>{
 
       localStorage.setItem("user-info",JSON.stringify(input));
-        if(input.firstname ==input.firstname && input.email ==input.email && input.password ==input.password){
-           navigate('/login')
-           
+        if(input.firstname ==input.firstname && input.email ==input.email && input.password ==input.password && input.firstname !="" && input.email != "" && input.password !=""){
+           navigate('/login') 
            localStorage.setItem("user-info" ,JSON.stringify(input));
         }else{
           alert("user invalid")
@@ -58,8 +58,8 @@ export default function Registration(){
 
     }
   return (
-<>
 
+<>
     <div className='mainContainer'>
     <Animation/>
 
